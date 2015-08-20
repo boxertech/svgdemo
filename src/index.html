@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="styles/site.css">
+    <style>
+        .rect4 {
+            stroke: #0000ff;
+            fill: #0000ff;
+        }
+        .rect4:hover {
+            stroke: #ff00ff;
+            fill: #ff00ff;
+        }
+        .rect7 {
+            stroke: #0000ff;
+            fill: #0000ff;
+        }
+        .rect7:hover {
+            stroke: #ff00ff;
+            fill: #ff00ff;
+        }
+        .rectA {
+            stroke: #0000ff;
+            fill: #0000ff;
+        }
+        .rectA:hover {
+            stroke: #ff00ff;
+            fill: #ff00ff;
+        }
+        .rectD {
+            stroke: #0000ff;
+            fill: #0000ff;
+        }
+        .rectD:hover {
+            stroke: #ff00ff;
+            fill: #ff00ff;
+        }
+        .demoImage {
+            width: 130px;
+            height: 125px;
+        }
+        .cssBackgroundImage1 {
+            background: url(images/noun_60975_cc3.svg);
+        }
+        .cssBackgroundImage2 {
+            background: url(images/noun_60975_cc4.svg);
+        }
+    </style>
+
+</head>
+<body>
+    <div style="display: none;">
+        <svg>
+            <defs>
+                <symbol id="noun_60975_ccC">
+                    <style>
+                        rect {
+                            stroke: #00ff00;
+                            fill: #00ff00;
+                        }
+                        rect:hover {
+                            stroke: #00ffff;
+                            fill: #00ffff;
+                        }
+                    </style>
+                    <rect x="29.4" y="76" width="41.2" height="5"/>
+                    <rect x="29.9" y="19" width="40.3" height="5"/>
+                    <rect x="76" y="29.7" width="5" height="40.6"/>
+                    <rect x="19" y="29.4" width="5" height="40.7"/>
+                    <path d="M90,30.4c0,1.4-1.2,2.6-2.6,2.6H69.6c-1.4,0-2.6-1.2-2.6-2.6V12.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V30.4z   M72,28h13V15H72V28z"/>
+                    <path d="M33,30.4c0,1.4-1.2,2.6-2.6,2.6H12.6c-1.4,0-2.6-1.2-2.6-2.6V12.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V30.4z   M15,28h13V15H15V28z"/>
+                    <path d="M90,87.4c0,1.4-1.2,2.6-2.6,2.6H69.6c-1.4,0-2.6-1.2-2.6-2.6V69.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V87.4z   M72,85h13V72H72V85z"/>
+                    <path d="M33,87.4c0,1.4-1.2,2.6-2.6,2.6H12.6c-1.4,0-2.6-1.2-2.6-2.6V69.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V87.4z   M15,85h13V72H15V85z"/>
+                    <text x="0" y="105" fill="#000000" font-size="10px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by sagit milshtein</text>
+                    <text x="0" y="115" fill="#000000" font-size="10px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text>
+                </symbol>
+                <symbol id="noun_60975_ccD">
+                    <rect class="rectD" x="29.4" y="76" width="41.2" height="5"/>
+                    <rect class="rectD" x="29.9" y="19" width="40.3" height="5"/>
+                    <rect class="rectD" x="76" y="29.7" width="5" height="40.6"/>
+                    <rect class="rectD" x="19" y="29.4" width="5" height="40.7"/>
+                    <path d="M90,30.4c0,1.4-1.2,2.6-2.6,2.6H69.6c-1.4,0-2.6-1.2-2.6-2.6V12.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V30.4z   M72,28h13V15H72V28z"/>
+                    <path d="M33,30.4c0,1.4-1.2,2.6-2.6,2.6H12.6c-1.4,0-2.6-1.2-2.6-2.6V12.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V30.4z   M15,28h13V15H15V28z"/>
+                    <path d="M90,87.4c0,1.4-1.2,2.6-2.6,2.6H69.6c-1.4,0-2.6-1.2-2.6-2.6V69.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V87.4z   M72,85h13V72H72V85z"/>
+                    <path d="M33,87.4c0,1.4-1.2,2.6-2.6,2.6H12.6c-1.4,0-2.6-1.2-2.6-2.6V69.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V87.4z   M15,85h13V72H15V85z"/>
+                    <text x="0" y="105" fill="#000000" font-size="10px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by sagit milshtein</text>
+                    <text x="0" y="115" fill="#000000" font-size="10px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text>
+                </symbol>
+                <symbol id="noun_60975_ccE">
+                    <rect class="rectE" x="29.4" y="76" width="41.2" height="5"/>
+                    <rect class="rectE" x="29.9" y="19" width="40.3" height="5"/>
+                    <rect class="rectE" x="76" y="29.7" width="5" height="40.6"/>
+                    <rect class="rectE" x="19" y="29.4" width="5" height="40.7"/>
+                    <path d="M90,30.4c0,1.4-1.2,2.6-2.6,2.6H69.6c-1.4,0-2.6-1.2-2.6-2.6V12.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V30.4z   M72,28h13V15H72V28z"/>
+                    <path d="M33,30.4c0,1.4-1.2,2.6-2.6,2.6H12.6c-1.4,0-2.6-1.2-2.6-2.6V12.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V30.4z   M15,28h13V15H15V28z"/>
+                    <path d="M90,87.4c0,1.4-1.2,2.6-2.6,2.6H69.6c-1.4,0-2.6-1.2-2.6-2.6V69.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V87.4z   M72,85h13V72H72V85z"/>
+                    <path d="M33,87.4c0,1.4-1.2,2.6-2.6,2.6H12.6c-1.4,0-2.6-1.2-2.6-2.6V69.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V87.4z   M15,85h13V72H15V85z"/>
+                    <text x="0" y="105" fill="#000000" font-size="10px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by sagit milshtein</text>
+                    <text x="0" y="115" fill="#000000" font-size="10px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text>
+                </symbol>
+            </defs>
+        </svg>
+    </div>
+    <div class="container">
+        <ul>
+            <li class="imageGroup">
+                <h2 class="imageGroupHeading">&ltimg&gt Tag</h2>
+                <div class="imageGroupFeatures">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Internal Style</th>
+                            <th>In-page Style</th>
+                            <th>External Stylesheet</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Image Example</td>
+                            <td>
+                                <img class="demoImage demoImage0" src="images/noun_60975_cc0.svg" alt="sample svg image">
+                            </td>
+                            <td>
+                                <img class="demoImage demoImage1" src="images/noun_60975_cc1.svg" alt="sample svg image">
+                            </td>
+                            <td>
+                                <img class="demoImage2" src="images/noun_60975_cc2.svg" alt="sample svg image">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Browser Cache</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                        </tr>
+                        <tr>
+                            <td>Styling</td>
+                            <td>yes</td>
+                            <td>no</td>
+                            <td>no</td>
+                        </tr>
+                        <tr>
+                            <td>CSS Interactions (e.g. :hover)</td>
+                            <td>no</td>
+                            <td>no</td>
+                            <td>no</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li class="imageGroup">
+                <h2 class="imageGroupHeading">CSS Background Image</h2>
+                <div class="imageGroupFeatures">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Internal Style</th>
+                            <th>In-page Style</th>
+                            <th>External Stylesheet</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Image Example</td>
+                            <td>
+                                <div class="demoImage cssBackgroundImage1"></div>
+                            </td>
+                            <td>
+                                <div class="demoImage cssBackgroundImage2"></div>
+                            </td>
+                            <td>
+                                <div class="demoImage2 cssBackgroundImage3"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Browser Cache</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                        </tr>
+                        <tr>
+                            <td>Styling</td>
+                            <td>yes</td>
+                            <td>no</td>
+                            <td>no</td>
+                        </tr>
+                        <tr>
+                            <td>CSS Interactions (e.g. :hover)</td>
+                            <td>no</td>
+                            <td>no</td>
+                            <td>no</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li class="imageGroup">
+                <h2 class="imageGroupHeading">&ltobject&gt Tag</h2>
+                <div class="imageGroupFeatures">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Internal Style</th>
+                            <th>In-page Style</th>
+                            <th>External Stylesheet</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Image Example</td>
+                            <td>
+                                <div class="demoImage">
+                                    <object type="image/svg+xml" data="images/noun_60975_cc6.svg"></object>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="demoImage">
+                                    <object type="image/svg+xml" data="images/noun_60975_cc7.svg"></object>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="demoImage2">
+                                    <object type="image/svg+xml" data="images/noun_60975_cc8.svg"></object>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Browser Cache</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                        </tr>
+                        <tr>
+                            <td>Styling</td>
+                            <td>yes</td>
+                            <td>no</td>
+                            <td>yes, with css file reference inside svg file</td>
+                        </tr>
+                        <tr>
+                            <td>CSS Interactions (e.g. :hover)</td>
+                            <td>no</td>
+                            <td>no</td>
+                            <td>yes, with css file reference inside svg file</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li class="imageGroup">
+                <h2 class="imageGroupHeading">Inline SVG</h2>
+                <div class="imageGroupFeatures">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Internal Style</th>
+                            <th>In-page Style</th>
+                            <th>External Stylesheet</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Image Example</td>
+                            <td>
+                                <div class="demoImage">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 130 125" enable-background="new 0 0 100 100" xml:space="preserve">
+                                        <style>
+                                            .rect9 {
+                                                stroke: #00ff00;
+                                                fill: #00ff00;
+                                            }
+                                            .rect9:hover {
+                                                stroke: #00ffff;
+                                                fill: #00ffff;
+                                            }
+                                        </style>
+                                        <rect class="rect9" x="29.4" y="76" width="41.2" height="5"/>
+                                        <rect class="rect9" x="29.9" y="19" width="40.3" height="5"/>
+                                        <rect class="rect9" x="76" y="29.7" width="5" height="40.6"/>
+                                        <rect class="rect9" x="19" y="29.4" width="5" height="40.7"/>
+                                        <path d="M90,30.4c0,1.4-1.2,2.6-2.6,2.6H69.6c-1.4,0-2.6-1.2-2.6-2.6V12.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V30.4z   M72,28h13V15H72V28z"/>
+                                        <path d="M33,30.4c0,1.4-1.2,2.6-2.6,2.6H12.6c-1.4,0-2.6-1.2-2.6-2.6V12.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V30.4z   M15,28h13V15H15V28z"/>
+                                        <path d="M90,87.4c0,1.4-1.2,2.6-2.6,2.6H69.6c-1.4,0-2.6-1.2-2.6-2.6V69.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V87.4z   M72,85h13V72H72V85z"/>
+                                        <path d="M33,87.4c0,1.4-1.2,2.6-2.6,2.6H12.6c-1.4,0-2.6-1.2-2.6-2.6V69.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V87.4z   M15,85h13V72H15V85z"/>
+                                        <text x="0" y="105" fill="#000000" font-size="10px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by sagit milshtein</text>
+                                        <text x="0" y="115" fill="#000000" font-size="10px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text>
+                                    </svg>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="demoImage">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 130 125" enable-background="new 0 0 100 100" xml:space="preserve">
+                                        <rect class="rectA" x="29.4" y="76" width="41.2" height="5"/>
+                                        <rect class="rectA" x="29.9" y="19" width="40.3" height="5"/>
+                                        <rect class="rectA" x="76" y="29.7" width="5" height="40.6"/>
+                                        <rect class="rectA" x="19" y="29.4" width="5" height="40.7"/>
+                                        <path d="M90,30.4c0,1.4-1.2,2.6-2.6,2.6H69.6c-1.4,0-2.6-1.2-2.6-2.6V12.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V30.4z   M72,28h13V15H72V28z"/>
+                                        <path d="M33,30.4c0,1.4-1.2,2.6-2.6,2.6H12.6c-1.4,0-2.6-1.2-2.6-2.6V12.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V30.4z   M15,28h13V15H15V28z"/>
+                                        <path d="M90,87.4c0,1.4-1.2,2.6-2.6,2.6H69.6c-1.4,0-2.6-1.2-2.6-2.6V69.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V87.4z   M72,85h13V72H72V85z"/>
+                                        <path d="M33,87.4c0,1.4-1.2,2.6-2.6,2.6H12.6c-1.4,0-2.6-1.2-2.6-2.6V69.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V87.4z   M15,85h13V72H15V85z"/>
+                                        <text x="0" y="105" fill="#000000" font-size="10px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by sagit milshtein</text>
+                                        <text x="0" y="115" fill="#000000" font-size="10px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text>
+                                    </svg>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="demoImage2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 130 125" enable-background="new 0 0 100 100" xml:space="preserve">
+                                        <rect class="rectB" x="29.4" y="76" width="41.2" height="5"/>
+                                        <rect class="rectB" x="29.9" y="19" width="40.3" height="5"/>
+                                        <rect class="rectB" x="76" y="29.7" width="5" height="40.6"/>
+                                        <rect class="rectB" x="19" y="29.4" width="5" height="40.7"/>
+                                        <path d="M90,30.4c0,1.4-1.2,2.6-2.6,2.6H69.6c-1.4,0-2.6-1.2-2.6-2.6V12.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V30.4z   M72,28h13V15H72V28z"/>
+                                        <path d="M33,30.4c0,1.4-1.2,2.6-2.6,2.6H12.6c-1.4,0-2.6-1.2-2.6-2.6V12.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V30.4z   M15,28h13V15H15V28z"/>
+                                        <path d="M90,87.4c0,1.4-1.2,2.6-2.6,2.6H69.6c-1.4,0-2.6-1.2-2.6-2.6V69.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V87.4z   M72,85h13V72H72V85z"/>
+                                        <path d="M33,87.4c0,1.4-1.2,2.6-2.6,2.6H12.6c-1.4,0-2.6-1.2-2.6-2.6V69.6c0-1.4,1.2-2.6,2.6-2.6h17.8c1.4,0,2.6,1.2,2.6,2.6V87.4z   M15,85h13V72H15V85z"/>
+                                        <text x="0" y="105" fill="#000000" font-size="10px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by sagit milshtein</text>
+                                        <text x="0" y="115" fill="#000000" font-size="10px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text>
+                                    </svg>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Browser Cache</td>
+                            <td>no</td>
+                            <td>no</td>
+                            <td>no</td>
+                        </tr>
+                        <tr>
+                            <td>Styling</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                        </tr>
+                        <tr>
+                            <td>CSS Interactions (e.g. :hover)</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li class="imageGroup">
+                <h2 class="imageGroupHeading">Inline SVG with &ltuse&gt Tag</h2>
+                <div class="imageGroupFeatures">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Internal Style</th>
+                            <th>In-page Style</th>
+                            <th>External Stylesheet</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Image Example</td>
+                            <td>
+                                <div class="demoImage">
+                                    <svg viewBox="0 0 130 125" >
+                                        <use xlink:href="#noun_60975_ccC"></use>
+                                    </svg>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="demoImage">
+                                    <svg viewBox="0 0 130 125" >
+                                        <use xlink:href="#noun_60975_ccD"></use>
+                                    </svg>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="demoImage2">
+                                    <svg viewBox="0 0 130 125" >
+                                        <use xlink:href="#noun_60975_ccE"></use>
+                                    </svg>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Browser Cache</td>
+                            <td>no</td>
+                            <td>no</td>
+                            <td>yes</td>
+                        </tr>
+                        <tr>
+                            <td>Styling</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                        </tr>
+                        <tr>
+                            <td>CSS Interactions (e.g. :hover)</td>
+                            <td>no</td>
+                            <td>no</td>
+                            <td>no</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <footer class="container text-center">
+        <p>&copy; 2015 Boxer Technology, L.L.C.</p>
+    </footer>
+</body>
+</html>

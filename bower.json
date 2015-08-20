@@ -1,0 +1,16 @@
+{
+  "name": "SVGDemo",
+  "version": "0.0.1",
+  "homepage": "https://github.com/boxertech/SVGDemo",
+  "authors": [
+    "Ken Wilkinson (wilk@boxertech.com)"
+  ],
+  "description": "Demo app to illustrate various ways to consume svg's",
+  "keywords": [
+    "svg"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "lodash": "~3.10.0"
+  }
+}
